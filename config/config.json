@@ -1,0 +1,6 @@
+{
+  "storage": {
+    "bucket": "images_bucket_go",
+    "url": "https://storage.googleapis.com"
+  }
+}
