@@ -18,6 +18,7 @@ jobs:
       with:
         repository: ${{ secrets.SECRETS_REPO }}
         token: ${{ secrets.SECRETS_REPO_ACCESS_TOKEN }}
+        path: secrets
    
     - name: Build and deploy the Docker image
       env:
