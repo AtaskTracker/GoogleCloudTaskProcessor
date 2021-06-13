@@ -89,7 +89,7 @@ func (s *ImageService) writeImageToFile(f *os.File, img []byte) error {
 
 func (s *ImageService) uploadFileToBucket(f *os.File) (string, error) {
 	ctx := context.Background()
-	client, err := storage.NewClient(ctx, option.WithCredentialsFile("google-secret.json"))
+	client, err := storage.NewClient(ctx, option.WithCredentialsFile("secrets/google-secret.json"))
 	if err != nil {
 		return "", err
 	}
